@@ -1,0 +1,27 @@
+.property {
+  padding-bottom: 5px;
+}
+
+.property__name {
+  font: bold 12px 'Roboto', sans-serif;
+}
+
+.property__value {
+  font: 300 12px 'Roboto', sans-serif;
+}
+  
+.product {
+  .property {
+    padding-bottom: 10px;
+  }
+  .property__name {
+    font: medium 18px 'Roboto', sans-serif;
+  }
+  .property__value {
+    padding-left: 40px;
+    font: 400 14px 'Roboto', sans-serif;
+  }
+}
+.product_docs {
+  display: inline-block;
+}

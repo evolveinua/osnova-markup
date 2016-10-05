@@ -1,0 +1,22 @@
+.price {
+    
+  }
+  
+.price__aviability {
+  font: 400 11px 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: block;
+  color: var(--colorTrue);
+}
+
+.price__aviability_false {
+  color: var(--colorFalse);
+}
+
+.price__coast {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font: 700 20px 'Roboto', sans-serif;
+}

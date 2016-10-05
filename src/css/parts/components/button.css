@@ -1,0 +1,55 @@
+.button {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 2px;
+  box-shadow: var(--boxShadow1);
+  font: bold 14px 'Roboto', sans-serif;
+  text-transform: uppercase;
+  outline: none;
+  border: 0;
+}
+.button.button_green {
+  background-color: var(--colorGreen);
+  color: var(--colorWhite);
+}
+.button.button_white {
+  border-color: var(--colorBase);
+  background-color: var(--colorWhite);
+  border-width: 1px;
+}
+.button.button_arrowed {
+  text-decoration: none;
+  position: relative;
+  padding: 15px 40px 15px 20px;
+  
+  &::after {
+    content: "\f102"; 
+    display: block;
+    font-family: 'Flaticon';
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.button.button_cart, .button.button_download {
+  text-decoration: none;
+  position: relative;
+  color: var(--colorWhite);
+  background-color: var(--colorBase);
+  padding: 15px 20px 15px 40px;
+
+  &::after {
+    content: ''; 
+    font-family: 'Flaticon';
+    font-size: 16px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.button.button_cart::after {content: '\f103';}
+.button.button_download::after {content: '\f104';}

@@ -1,0 +1,22 @@
+extends layout/layout.jade
+block content
+  .container.container_top.cart
+    table.cart__table.cart-table
+      tr.cart-table__row
+        td.cart-table__thumbnail
+          img(src='http://placehold.it/50x50')
+        td.cart-table__description
+          h3.cart-table__name 
+          ul.cart-table__categories.categories
+            li.categories__category
+              a(href="#") Category 1
+          .cart-table__article
+        td.cart-table__buttons
+          .cart-table__up 
+          .cart-table__down 
+          .caer-table__quantity 3
+        td.cart-table__price
+    .cart__description
+    form.cart__form.form.cart-form
+      .cart-form__column
+        

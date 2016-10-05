@@ -1,0 +1,41 @@
+body {
+  background-color: var(--colorBody);
+  padding-top: var(--headerHeight);
+  color: var(--colorText);
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: var(--colorWhite);
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: var(--boxShadow1);
+}
+.container_cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.container_top {
+  margin-top: 60px;
+}
+.container.container_wide {
+  width: 100%;
+  max-width: 100%;
+  box-shadow: initial;
+  border-radius: initial;
+}
+.container__inner {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+.container.container_colored {
+  background-color: var(--colorBase);
+}
+.wrapper {
+  max-width: 1140px;
+  margin: 0 auto;
+}

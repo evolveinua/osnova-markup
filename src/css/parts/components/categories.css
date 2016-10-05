@@ -1,0 +1,17 @@
+.categories {
+  padding: 0;
+  margin: 0;
+  flex-basis: 100%;
+  list-style-type: none;
+}
+.categories__category {
+  display: inline;
+  font: 400 12px 'Roboto', sans-serif;
+  color: var(--colorBase);
+}
+.categories__category a::after{
+  content: ',';
+}
+.categories__category:last-child a:after{
+  content: '';
+}

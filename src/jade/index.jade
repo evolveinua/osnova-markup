@@ -1,0 +1,132 @@
+extends layout/layout.jade
+include components/card_product.jade
+include components/card_news.jade
+block content
+  .container.container_wide.slider-big
+    .slider-big__slider.container__inner
+      .slider-big__control.control.control_left
+      .slider-big__frame
+        ul.slider-big__slides
+          li.js_slide 
+            h2.slider-big__headling  Lorem ipsum. 1
+            p.slider-big__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum unde adipisci earum, nobis alias commodi.
+            img.slider-big__image(src='http://placehold.it/800x400')
+            a.slider-big__link.button.button_green(href="/news") Подробнее
+          li.js_slide 
+            h2.slider-big__headling  Lorem ipsum. 2
+            p.slider-big__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum unde adipisci earum, nobis alias commodi.
+            img.slider-big__image(src='http://placehold.it/800x200')
+            a.slider-big__link.button.button_green(href="/news") Подробнее
+          li.js_slide 
+            h2.slider-big__headling  Lorem ipsum. 3
+            p.slider-big__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum unde adipisci earum, nobis alias commodi.
+            img.slider-big__image(src='http://placehold.it/800x500')
+            a.slider-big__link.button.button_green(href="/news") Подробнее
+          li.js_slide 
+            h2.slider-big__headling  Lorem ipsum. 4
+            p.slider-big__description  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum unde adipisci earum, nobis alias commodi.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic perspiciatis est earum, reprehenderit facilis maxime?
+            img.slider-big__image(src='http://placehold.it/800x500')
+            a.slider-big__link.button.button_green(href="/news") Подробнее
+      .slider-big__control.control.control_right
+      ul.slider-big__dots.dots
+  section.container.about-company
+    h1.about-company__headling О компании
+    p.about-company__text Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего, создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!"
+    .about-company__cards
+      .about-company__card
+        .about-company__image
+          img(src='images/wheels.png')
+        .about-company__text.about-company__text_card Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном
+      .about-company__card
+        .about-company__image
+          img(src='images/human.png')
+        .about-company__text.about-company__text_card Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим
+      .about-company__card
+        .about-company__image
+          img(src='images/diagram.png')
+        .about-company__text.about-company__text_card Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и бла
+    h2.about-company__headling.about-company__headling_secondary Наши представительства 
+    p.about-company__text.about-company__text_secondary Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого.
+    .about-company__cards
+      .about-company__card
+        .about-company__image
+          img(src='images/wheels.png')
+        h3.about-company__headling.about-company__headling_cart Польша
+        .about-company__text.about-company__text_card Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном
+      .about-company__card
+        .about-company__image
+          img(src='images/human.png')
+        h3.about-company__headling.about-company__headling_cart Украина
+        .about-company__text.about-company__text_card Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим
+      .about-company__card
+        .about-company__image
+          img(src='images/diagram.png')
+        h3.about-company__headling.about-company__headling_cart Россия
+        .about-company__text.about-company__text_card Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и бла
+  section.container.cards-preview
+    header.cards-preview__header.wrapper
+      .cards-preview__description
+        h2.cards-preview__headling Акционные предложения
+        .cards-preview__helper Больше акционных предложений по ссылке !{'<br />'}
+        span.cards-preview__helper_small (Нажмите на кнопку для перехода)
+      .cards-preview__link
+        a(href='news.html').button.button_green.button_arrowed Смотреть все акции
+    .cards-preview__inner
+      - const sales = [{"imageSrc":"http://placehold.it/280x220","name":"Eiusmod proident duis esse nisi occaecat dolor mollit ipsum cupidatat eu.","updated":"1987.09.23","description":"Ex dolore magna anim id. Labore laboris officia consectetur occaecat. Sit consectetur cillum labore nulla commodo reprehenderit pariatur sit aute dolor ea.","permalink":"http://vk.com"},{"imageSrc":"http://placehold.it/280x220","name":"Tempor aliqua cillum labore reprehenderit dolore ipsum ut Lorem sit officia id.","updated":"1985.12.24","description":"Ea magna qui tempor voluptate id. Consequat irure reprehenderit eiusmod id fugiat. Cupidatat occaecat aute commodo sit officia.","permalink":"http://vk.com"},{"imageSrc":"http://placehold.it/280x220","name":"Pariatur consequat velit nostrud ipsum fugiat sit duis eu quis.","updated":"1987.07.28","description":"Qui in pariatur ullamco minim eiusmod adipisicing deserunt est minim nulla amet dolor exercitation velit. Officia eu enim cillum velit ut ea ullamco Lorem consectetur minim aliqua. Deserunt duis commodo non est aliquip tempor magna voluptate exercitation.","permalink":"http://vk.com"},{"imageSrc":"http://placehold.it/280x220","name":"Labore consectetur incididunt tempor ut non ad et ea ipsum Lorem non est.","updated":"1987.12.08","description":"Officia aute laboris non exercitation ea. Sint nisi proident aute nisi laborum pariatur nulla incididunt sunt ad nulla non. Quis sunt exercitation aliqua officia.","permalink":"http://vk.com"}]
+        each sale in sales
+          mixin card_news(sale)
+  section.container.cards-preview
+    header.cards-preview__header.wrapper
+      .cards-preview__description
+        h1.cards-preview__headling Хиты продаж
+        .cards-preview__helper Больше товаров по ссылке !{'<br />'} 
+        span.cards-preview__helper_small (Нажмите на кнопку для перехода)
+      .cards-preview__link
+        a(href='catalog.html').button.button_green.button_arrowed Перейти к каталогу
+    .cards-preview__inner
+      - const products = [{"imageSrc":"http://placehold.it/280x220","name":"Mollit enim cillum cupidatat irure eu aliqua laboris proident duis.","id":0,"price":1793.82,"description":"In reprehenderit officia elit mollit esse deserunt Lorem mollit exercitation. Pariatur nulla eiusmod eiusmod labore sint anim. Id proident excepteur culpa qui irure aliqua non.","permalink":"http://vk.com","categories":[5],"properties":[{"name":"Ferrell","value":"Charles"},{"name":"Mccoy","value":"Lara"}],"updated":"Thu Jun 17 2010 22:49:48 GMT+0300 (EEST)","isAvailable":false},{"imageSrc":"http://placehold.it/280x220","name":"Occaecat aliquip occaecat mollit pariatur commodo excepteur officia magna voluptate proident anim.","id":1,"price":7892.21,"description":"Lorem qui nostrud et sunt officia. Amet est culpa aliqua aute mollit veniam magna cillum ea minim do Lorem sunt ipsum. Mollit pariatur eu minim ex ipsum reprehenderit veniam.","permalink":"http://vk.com","categories":[25,10],"properties":[{"name":"Hull","value":"Knowles"},{"name":"Dena","value":"Roach"},{"name":"Evans","value":"Fields"},{"name":"Mindy","value":"Mitchell"}],"updated":"Thu Mar 09 1978 20:51:28 GMT+0200 (MSK)","isAvailable":true},{"imageSrc":"http://placehold.it/280x220","name":"Et magna commodo nisi sint voluptate laborum mollit Lorem in labore ea deserunt veniam.","id":2,"price":3884.9,"description":"Excepteur sit est nisi aute Lorem elit. Minim non sunt veniam in adipisicing officia duis exercitation ex nisi exercitation sint occaecat consequat. Ipsum pariatur ipsum nostrud consectetur non ex mollit mollit anim.","permalink":"http://vk.com","categories":[13,9],"properties":[{"name":"Kris","value":"Barrera"},{"name":"Susanna","value":"Wong"},{"name":"Russo","value":"Barlow"},{"name":"Stacie","value":"Hunter"}],"updated":"Sun Jul 31 1977 03:40:22 GMT+0200 (MSK)","isAvailable":false},{"imageSrc":"http://placehold.it/280x220","name":"Exercitation do cupidatat culpa nulla sit voluptate minim sint et reprehenderit cupidatat.","id":3,"price":3189.33,"description":"Voluptate commodo velit eiusmod proident adipisicing do pariatur sit laborum tempor ad adipisicing id ad. Exercitation ad ipsum eu labore quis do amet fugiat nulla aute esse. Eu eu enim minim mollit est non reprehenderit do quis laborum ut commodo minim.","permalink":"http://vk.com","categories":[18],"properties":[{"name":"Jennie","value":"Puckett"},{"name":"Stefanie","value":"Leach"},{"name":"Kirkland","value":"Stone"},{"name":"Harrington","value":"Ellis"}],"updated":"Sun Feb 16 1997 06:39:21 GMT+0200 (EET)","isAvailable":false},{"imageSrc":"http://placehold.it/280x220","name":"Mollit id ut sit labore qui.","id":4,"price":4734.4,"description":"Nulla commodo sunt sunt sint. Esse aliquip ipsum laboris enim sit qui enim minim ipsum nisi eu aliqua mollit occaecat. Culpa occaecat cillum quis eiusmod adipisicing laborum.","permalink":"http://vk.com","categories":[17,1],"properties":[{"name":"Merritt","value":"Hernandez"},{"name":"Salazar","value":"Estrada"},{"name":"Jody","value":"Figueroa"},{"name":"Mcknight","value":"Boyd"}],"updated":"Fri Jun 19 2015 07:58:10 GMT+0300 (EEST)","isAvailable":false},{"imageSrc":"http://placehold.it/280x220","name":"Id veniam quis aliqua reprehenderit minim anim in amet enim in anim dolore aliqua.","id":5,"price":682.64,"description":"Pariatur incididunt esse id culpa dolor sit deserunt nisi nulla est tempor occaecat ea magna. Laboris irure occaecat mollit ut proident pariatur commodo cupidatat consectetur occaecat labore nisi dolore occaecat. Dolor deserunt amet irure dolor.","permalink":"http://vk.com","categories":[10],"properties":[{"name":"Meghan","value":"Mccormick"}],"updated":"Wed Jul 24 2002 16:14:58 GMT+0300 (EEST)","isAvailable":false},{"imageSrc":"http://placehold.it/280x220","name":"Proident qui occaecat consectetur aliqua laboris commodo.","id":6,"price":6226.2,"description":"Aliqua exercitation in proident amet enim aliqua eiusmod sunt aute sunt sint laboris duis ut. Est occaecat deserunt id pariatur ipsum ad. Sint enim elit et sint officia eiusmod qui fugiat enim.","permalink":"http://vk.com","categories":[25],"properties":[{"name":"Barbra","value":"Roberson"},{"name":"Dolores","value":"Fernandez"},{"name":"Solis","value":"Castaneda"},{"name":"Olsen","value":"Levy"}],"updated":"Wed Jan 06 1982 01:58:12 GMT+0200 (MSK)","isAvailable":false},{"imageSrc":"http://placehold.it/280x220","name":"Anim culpa incididunt qui nostrud cillum cillum ipsum.","id":7,"price":3085.02,"description":"Id occaecat duis ullamco cupidatat culpa proident commodo incididunt sunt reprehenderit deserunt est. Cupidatat anim consectetur dolor aliquip sit aliquip ea. Voluptate esse irure anim cupidatat reprehenderit Lorem irure proident cillum commodo anim.","permalink":"http://vk.com","categories":[5,18],"properties":[{"name":"Henrietta","value":"Harrington"},{"name":"Powell","value":"Tyson"},{"name":"Melton","value":"Monroe"}],"updated":"Mon May 18 2015 00:24:51 GMT+0300 (EEST)","isAvailable":false}]
+      each p in products
+        mixin product(p)
+  section.container.container_wide.container_colored.slider-vendors
+    .container__inner
+      h1.slider-vendors__headling Производители
+      p.slider-vendors__text В отдельном разделе вы можете ознакомится с каталогами продукции интересующих производителей
+      .slider-vendors__slider
+        .slider-vendors__left.control.control_white.control_left
+        .slider-vendors__frame
+          ul.slider-vendors__slides
+            li.js_slide 
+              a.slider-vendors__vendor(href='vendors.html')
+                img.slider-vendors__image(src='http://placehold.it/200x120')
+            li.js_slide 
+              a.slider-vendors__vendor(href='vendors.html')
+                img.slider-vendors__image(src='http://placehold.it/200x120')
+            li.js_slide 
+              a.slider-vendors__vendor(href='vendors.html')
+                img.slider-vendors__image(src='http://placehold.it/200x120')
+            li.js_slide 
+              a.slider-vendors__vendor(href='vendors.html')
+                img.slider-vendors__image(src='http://placehold.it/200x120')
+            li.js_slide 
+              a.slider-vendors__vendor(href='vendors.html')
+                img.slider-vendors__image(src='http://placehold.it/200x120')
+            li.js_slide 
+              a.slider-vendors__vendor(href='vendors.html')
+                img.slider-vendors__image(src='http://placehold.it/200x120')
+            li.js_slide 
+              a.slider-vendors__vendor(href='vendors.html')
+                img.slider-vendors__image(src='http://placehold.it/200x120')
+        .slider-vendors__right.control.control_white.control_right
+      a(href='vendors.html').slider-vendors__link.button.button_green.button_arrowed Перейти к каталогам
+  section.container.cards-preview
+    header.cards-preview__header.wrapper
+      .cards-preview__description
+        h1.cards-preview__headling Новости
+        .cards-preview__helper Больше новостей и предложений по ссылке !{'<br />'}
+        span.cards-preview__helper_small (Нажмите на кнопку для перехода)
+      .cards-preview__link
+        a(href='news.html').button.button_green.button_arrowed Смотреть все новости
+    .cards-preview__inner
+      - const news = [{"imageSrc":"http://placehold.it/280x220","name":"Concho","updated":"2011.04.06","description":"Velit cillum officia qui commodo cillum cupidatat esse. Nostrud reprehenderit nostrud irure duis eu excepteur amet nulla laborum enim laborum. Ex aliquip ad ullamco elit.","permalink":"http://vk.com"},{"imageSrc":"http://placehold.it/280x220","name":"Taycheedah","updated":"2001.03.27","description":"Ea voluptate cupidatat adipisicing adipisicing et ipsum cupidatat minim. Ipsum enim voluptate aliqua mollit cillum cupidatat do ex. Dolor ipsum eiusmod aute aute eiusmod dolore eiusmod amet magna.","permalink":"http://vk.com"},{"imageSrc":"http://placehold.it/280x220","name":"Lloyd","updated":"1994.03.29","description":"Ipsum dolore enim adipisicing minim exercitation qui. Et do ea consectetur est cillum laborum laboris occaecat dolore do nostrud anim ullamco sint. Proident irure culpa ipsum cupidatat consectetur cillum veniam minim voluptate dolor nisi aliqua.","permalink":"http://vk.com"},{"imageSrc":"http://placehold.it/280x220","name":"Gambrills","updated":"1999.11.15","description":"Excepteur proident ullamco enim aute. Voluptate amet irure aliqua aute eu exercitation cillum laboris commodo est officia nisi sit reprehenderit. Enim nostrud do qui aliquip magna amet id nulla aliquip magna est.","permalink":"http://vk.com"}]
+        each newsItem in news
+          mixin card_news(newsItem)

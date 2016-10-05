@@ -1,0 +1,52 @@
+extends layout/layout.jade
+include components/card_product.jade
+block content
+  .container.container_top.product
+    .product__gallery.gallery
+      .gallery__current
+        img(src='http://placehold.it/800x500')
+      ul.gallery__list
+        li.gallery__item.gallery__item_active
+          img(src='http://placehold.it/100x100')
+        li.gallery__item.gallery__item
+          img(src='http://placehold.it/100x100')
+        li.gallery__item.gallery__item
+          img(src='http://placehold.it/100x100')
+    .product__main
+      h1.product__headling Замок RZ 7309
+      ul.product__categories
+        li.product__category
+          a(href='catalog.html') Почтовые замки
+        li.product__category
+          a(href='catalog.html') Дверные замки
+      ul.product__properties
+        li.product__property.property
+          span.property__name Вес 
+          span.property__value 5кг
+        li.product__property.property
+          span.property__name Длинна 
+          span.property__value 5 метров
+        li.product__property.property
+          span.property__name Диаметр 
+          span.property__value 3 метра
+      a(href='dock.pdf').product_docs.button.button_green Документация (ПДФ)
+      p.product__text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ullam quisquam, laboriosam qui voluptatibus vitae! Officia culpa sapiente at esse. Quod enim explicabo, voluptates recusandae.
+      .product__helper 
+        .product__price.price
+          span.price__aviability В наличии
+          span.price__coast 2500 грн
+        a.button.button_blue.button_cart.product__cart(href='product.html') В корзину
+    .product__description
+      h2.product__headling.product__headling_second Полное описание
+      p.product__text.product__text_big  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo odit ratione minima quis, doloribus, asperiores, sit explicabo, voluptatum facilis tenetur molestiae excepturi beatae possimus omnis in. Perspiciatis tempora temporibus recusandae, in nulla fugit. Vero corrupti ipsam, culpa provident consequatur dolores sunt, ut nam assumenda animi omnis ratione quidem quisquam laborum voluptas impedit consectetur officia facilis repudiandae amet veritatis, perferendis. Molestias ad architecto labore in quos aliquam ipsam eveniet iusto excepturi vel error officiis sequi quaerat aperiam dolor, id deserunt, ducimus adipisci quas et ut molestiae. Asperiores similique, labore odit ea magnam voluptatibus blanditiis natus, fuga quis, laudantium obcaecati eaque, ducimus.
+  section.container.cards-preview
+    header.cards-preview__header.wrapper
+      .cards-preview__description
+        h1.cards-preview__headling Смотрите также:
+      .cards-preview__link
+        a(href='catalog.html').button.button_green.button_arrowed Перейти к каталогу
+    .cards-preview__inner
+      - const products = [{"imageSrc":"http://placehold.it/280x220","name":"Ipsum fugiat ad nisi adipisicing duis nisi adipisicing do sit.","id":0,"price":2872.93,"description":"Aliqua do duis in magna mollit sit ut commodo. Cupidatat exercitation mollit enim cillum ullamco velit culpa esse. Officia mollit mollit ut labore quis ea quis.","permalink":"http://vk.com","categories":[22],"properties":[{"name":"Rojas","value":"Boyle"}],"updated":"Sat Feb 09 2008 04:48:45 GMT+0200 (EET)"},{"imageSrc":"http://placehold.it/280x220","name":"Commodo cupidatat dolor cillum do officia ea commodo id consequat.","id":1,"price":205.19,"description":"In laboris excepteur cupidatat laborum ad in voluptate nostrud do enim commodo mollit pariatur ullamco. Sit qui mollit irure nostrud pariatur do veniam quis qui. Fugiat fugiat eiusmod ut sunt.","permalink":"http://vk.com","categories":[26],"properties":[{"name":"Bridgett","value":"Mejia"},{"name":"Mattie","value":"Holt"}],"updated":"Thu Dec 20 1979 04:31:46 GMT+0200 (MSK)"},{"imageSrc":"http://placehold.it/280x220","name":"Quis ea dolore anim id aliqua esse sint reprehenderit irure.","id":2,"price":2092.23,"description":"Ullamco sunt enim nostrud tempor dolor proident ipsum nostrud commodo magna est. Laboris dolore nisi ea mollit sit nulla sit quis. Sint non non anim magna consectetur sit consequat tempor pariatur velit.","permalink":"http://vk.com","categories":[2],"properties":[{"name":"Wolfe","value":"Raymond"},{"name":"Adkins","value":"Hubbard"},{"name":"Danielle","value":"Garrison"},{"name":"Lenore","value":"Johns"}],"updated":"Tue Dec 18 2012 18:01:36 GMT+0200 (EET)"},{"imageSrc":"http://placehold.it/280x220","name":"Qui sint eu non qui ea aute cillum qui occaecat mollit.","id":3,"price":1543.37,"description":"Aute mollit non non proident cillum do nulla officia ad esse adipisicing anim mollit enim. Aute anim cillum incididunt non reprehenderit mollit ipsum ipsum cillum. Eu qui laboris consectetur amet.","permalink":"http://vk.com","categories":[10,1],"properties":[{"name":"Elba","value":"Carter"}],"updated":"Mon Apr 08 1985 17:27:04 GMT+0300 (MSD)"}]
+      each p in products
+        mixin product(p)
+   

@@ -1,0 +1,24 @@
+.control {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  background-color: var(--colorBase);
+  position: relative;
+  cursor: pointer;
+  &::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Flaticon';
+    font-size: 22px;
+    color: var(--colorWhite);
+    transform: translate(-50%, -50%);
+  }
+}
+.control_left::after {content: "\f101";}
+.control_right::after {content: "\f102";}
+.control_white {
+  background-color: var(--colorWhite);
+  &::after {color: var(--colorBase);}
+}

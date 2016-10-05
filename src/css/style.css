@@ -1,0 +1,158 @@
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+0.0 General
+1.0 Reset
+1.1 Grid
+1.2 Typography
+*/
+
+/*Roboto*/
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300,300i,400,500,700&subset=cyrillic,cyrillic-ext';
+
+/*Rubik*/
+@import 'https://fonts.googleapis.com/css?family=Rubik:500&subset=cyrillic';
+
+/* 0.0 General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root{
+  --colorBase: #485e88;
+  --colorGreen: #239345;
+  --colorWhite: #fff;
+  --colorBody: #daebf1;
+  --colorGray: #eceded;
+  --colorFooter: #7984C2;
+  --colorText: #424A60;
+  --colorTab: #576AB2;
+  --colorTabActive: #4B5D96;
+  --colorTrue: #4CAF4E;
+  --colorFalse: #c22942;
+
+  --evenBgColor: #EFF9FE;
+  --oddBgColor: #DBE9EE;
+  --asideWidth: 300px;
+  --headerHeight: 160px;
+  --headerShrinkedHeight: 60px;
+  --containerWidth: 1250px;
+  --borderGray: 1px solid var(--colorGray);
+  --boxShadow1: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);;
+}
+
+
+/* 1.0 Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+a:matches(:hover, :any-link) {
+  outline: 0;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+@import url('parts/general.css');
+
+@import url('parts/icons.css');
+
+@import url('parts/components/form.css');
+
+@import url('parts/header.css');
+@import url('parts/footer.css');
+
+
+@import url('parts/components/about-company.css');
+@import url('parts/components/button.css');
+@import url('parts/components/card.css');
+@import url('parts/components/slider-big.css');
+@import url('parts/components/control.css');
+@import url('parts/components/slider-vendors.css');
+@import url('parts/components/cards-preview.css');
+@import url('parts/components/product.css');
+@import url('parts/components/price.css');
+@import url('parts/components/gallery.css');
+@import url('parts/components/property.css');
+@import url('parts/components/single.css');
+@import url('parts/components/categories.css');
+@import url('parts/components/cart.css');
+@import url('parts/components/modal.css');
+@import url('parts/components/form.css');
+@import url('parts/components/upload-form.css');
+@import url('parts/components/pagination.css');
+@import url('parts/components/slider-rescent.css');
+

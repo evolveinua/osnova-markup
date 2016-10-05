@@ -1,0 +1,10 @@
+mixin card_news(news)
+  .card.card_news
+    a(href='new.html').card__thumbnail
+      img.card__image(src=news.imageSrc)
+    .card__content
+      h2.card__headling
+         a(href='new.html')= news.name
+      .card__date=  'Опубликованно: ' + news.updated
+      .card__description= news.description
+      .card__link.button.button_white  Подробнее

@@ -1,0 +1,16 @@
+.gallery {
+
+}
+.gallery__current img{
+  width: 100%;
+}
+.gallery__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+.gallery__list li {
+  cursor: pointer;
+}

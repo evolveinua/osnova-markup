@@ -1,0 +1,56 @@
+.slider-rescent {
+  
+}
+.slider-rescent__controls {
+  display: flex;
+}
+.slider-rescent__controls .control {
+  margin: 0 5px;
+}
+.slider-rescent__frame {
+  position: relative;
+  overflow: hidden;
+}
+.slider-rescent__slides {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  margin: 0;
+}
+.slider-rescent__slides .card {
+  flex: 0 0 25%;
+  white-space: normal;
+  padding: 0;
+  display: flex;
+  
+  .card__inner {
+    background-color: var(--colorWhite);
+    border: var(--borderGray);
+    border-top: initial;
+    margin-left: -1px;
+    margin-right: -1px;
+  }
+  .card__description {
+    font-size: 12px;
+  }
+  .card__description_short::after {
+    content: '';
+    font-size: 0;
+    display: none;
+  }
+  .card__properties {
+    visibility: visible;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .card__content {
+    display: flex;
+    position: static;
+    z-index: 1;
+    margin: 0;
+    background-color: var(--colorWhite);
+    border: none;
+    border-top: initial;
+  }
+}

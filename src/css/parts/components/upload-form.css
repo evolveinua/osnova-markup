@@ -1,0 +1,76 @@
+.upload-form {
+  display: flex;
+  max-width: 960px;
+  position: relative;
+  padding: 15px 35px 35px;
+}
+.upload-form__text {
+  flex: 0 1 40%;
+  padding-right: 30px;
+}
+.upload-form__form {
+  flex: 0 1 60%;
+  padding-left: 30px;
+  border-left: var(--borderGray);
+}
+.upload-form__headling {
+  padding: 0;
+  margin: 0;
+  padding-top: 14px;
+  font: bold 17px 'Roboto', sans-serif;
+}
+.upload-form__description {
+  margin: 0;
+  padding: 0;
+  padding-top: 5px;
+  font: 400 12px 'Roboto', sans-serif;
+}
+.upload-form__description_margined {
+  padding-top: 20px;
+}
+.upload-form__inputs {
+  padding-top: 20px;
+  padding-bottom: 15px;
+  clear: fix;
+}
+.upload-form__input, .upload-form__textarea {
+  float: left;
+  border: var(--borderGray);
+  border-radius: 1px;
+  width: 50%;
+  margin-bottom: 15px;
+}
+.upload-form__textarea {
+  float: right;
+  height: 100%;
+  height: 93px;
+  width: calc(50% - 15px);
+  margin-left: 15px;
+}
+.upload-form__file {
+  clear: fix;
+  margin-bottom: 30px;
+}
+.input-file {
+  position: relative;
+  display: block;
+}
+.upload-form__file .button {
+  display: inline-block;
+}
+.upload-form__fileinput {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.upload-form__filetext {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  padding-top: 5px;
+  font: 400 12px 'Roboto', sans-serif;
+}

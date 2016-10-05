@@ -1,0 +1,30 @@
+mixin product(product)
+  .card.card_product
+    a(href='product.html').card__thumbnail  
+      img.card__image(src=product.imageSrc)
+    .cart__inner
+      .card__content
+        h2.card__headling
+          a(href='product.html')= product.name
+        ul.card__categories
+          each category, i in product.categories 
+            li.card__category
+              a(href=category) Категория !{i}
+        - var description = product.description.split('');
+        - var short = description.splice(0, 120).join('').replace(/\s+$/g, '');
+        - description = description.join('');
+        - var html = '<span class="card__description_short">'+short+'</span>'+description;
+        .card__description !{html}
+        ul.card__properties
+          each property in product.properties
+            li.card__property.property
+              span.property__name= property.name
+              span.property__value= ': ' + property.value
+        .card__helper
+          .card__price.price
+            if (product.isAvailable)
+              span.price__aviability В наличии
+            else
+               span.price__aviability.price__aviability_false Нет в наличии
+            span.price__coast= product.price + ' грн'
+          a.card__link.button.button_cart(href='product.html') В корзину

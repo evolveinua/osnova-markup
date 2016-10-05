@@ -1,0 +1,47 @@
+.about-company {
+  padding: 0px 50px 50px;
+  overflow: hidden;
+}
+.about-company__headling  {
+  text-align: center;
+  margin: 0 auto;
+  font: bold 21px 'Roboto', sans-serif;
+  padding: 55px 0 30px;
+}
+.about-company__headling_cart {
+  font: medium 18px 'Roboto', sans-serif;
+  padding-bottom: 20px;
+  padding-top: 0;
+}
+.about-company__text {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 30px;
+  text-align: center;
+  font: 300 12px 'Roboto', sans-serif;
+}
+.about-company__text_secondary {
+  padding-bottom: 30px;
+}
+.about-company__text_card {
+  padding-bottom: 17px;
+}
+.about-company__cards {
+  margin: 0 -80px;
+  display: flex;
+}
+.about-company__card {
+  flex: 0 1 33.3%;
+  padding: 0 80px;
+}
+.about-company__cards > .about-company__card:nth-child(2) {
+  border-left: var(--borderGray);
+  border-right: var(--borderGray);
+}
+.about-company__image {
+  height: 95px;
+}
+.about-company__image img {
+  display: block;
+  margin: 0 auto;
+}

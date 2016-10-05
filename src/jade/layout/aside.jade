@@ -1,0 +1,52 @@
+.modal 
+  ul.modal__categories.modal-categories
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Все
+    li.modal-categories__category
+      span.modal-categories__name.modal-categories__name_subcategories Замки для металической мебели
+      ul.modal-categories__subcategories
+        li.modal-categories__category
+          a(href='catalog.html').modal-categories__name Показать все
+        li.modal-categories__category
+          a(href='catalog.html').modal-categories__name Категория 1
+        li.modal-categories__category
+          a(href='catalog.html').modal-categories__name Категория 2
+        li.modal-categories__category
+          a(href='catalog.html').modal-categories__name Категория 3
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Ключи
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Почтовые замки
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Поворотно-прижимные замки
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Мебельные замки
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Замки для электрошкафов
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Замки для архивных шкафов
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Монетные замки
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Сейфовые замки
+    li.modal-categories__category
+      a(href='catalog.html').modal-categories__name Поворотные рукояти
+  .modal__form.upload-form
+    .upload-form__close
+    .upload-form__text
+      p.upload-form__headling Не нашли что искали? !{'<br />'} Оставьте заяку на товар
+      p.upload-form__description Оставьте свои контактные данные, опишите необходимый товар и приложите картинку. В ближайшее время с Вами свяжется наш менеджер для уточнения деталей.
+    form.upload-form__form.form
+      p.upload-form__headling Контактные данные
+      p.upload-form__description.upload-form__description_margined Обращайтесь к нам по любым вопросам и предложения
+      .upload-form__inputs
+        input(type='text' name='uname' placeholder='Ф.И.О').form__input.upload-form__input
+        textarea.form__textarea.upload-form__textarea(name='umsg', placeholder='Название или описание товара')
+        input(type='text' name='ucontacts' placeholder='E-mail или телефон').form__input.upload-form__input
+      .upload-form__file
+         p.upload-form__headling Загрузите изображение
+         label.input-file
+          p.upload-form__filetext Файл не выбран..
+          button(type='button').button.button_white Выбрать файл
+          input(type='file' name='ufile').upload-form__fileinput
+      button(type='submit').button.button_green.upload-form__submit Оставить заявку

@@ -1,0 +1,14 @@
+.form {}
+.form__input, .form__textarea {
+  font: 400 14px 'Roboto', sans-serif;
+  color: var(--colorText);
+  padding: 10px 15px;
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.form__textarea {
+  resize: none;
+  width: 100%;
+}

@@ -1,0 +1,12 @@
+mixin card_cert(news)
+  .card.card_cert
+    a(hre='/').card__thumbnail
+      img.card__image(src=news.imageSrc)
+    .card__content
+      h2.card__headling
+        a(href='/')= news.name
+      .card__helper
+        .card__size.size
+          .size__text Размер каталога:
+          .size__number= news.size + 'mb'
+        .card__link.button.button_download  Загрузить
