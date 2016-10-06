@@ -16,9 +16,9 @@
     <header class="header">
       <adress class="header__contacts contact-bar">
         <ul class="contact-bar__real contact-icons">
-          <li class="contact-icons__item"><a href="#footer" class="contact-icons__icon contact-icons__icon_map flaticon-loc">| Харьков</a></li>
-          <li class="contact-icons__item"><a href="tel:+380636605919" class="contact-icons__icon contact-icons__icon_phone flaticon-phone">+ 38 099 456 78 90</a></li>
-          <li class="contact-icons__item"><a href="mailto:osnova-m@gmail.com" class="contact-icons__icon contact-icons__icon_mail flaticon-mail">osnova-m@gmail.com</a></li>
+          <li class="contact-icons__item"><a href="#footer" class="contact-icons__icon contact-icons__icon_map flaticon-loc"> <span class="contact-icons__text">Харьков</span></a><a class="contact-icons__link"></a></li>
+          <li class="contact-icons__item"><a href="tel:+380636605919" class="contact-icons__icon contact-icons__icon_phone flaticon-phone"><span class="contact-icons__text">+ 38 099 456 78 90</span></a></li>
+          <li class="contact-icons__item"><a href="mailto:osnova-m@gmail.com" class="contact-icons__icon contact-icons__icon_mail flaticon-mail"> <span class="contact-icons__text">osnova-m@gmail.com</span></a></li>
         </ul>
         <ul class="contact-bar__social social-icons">
           <li class="social-icons__item"><span class="social-icons__intro">Мы в соцсетях:</span></li>
@@ -42,17 +42,22 @@
           </ul>
         </div>
         <div class="header__controls control-bar">
-          <div class="control-bar__item control-bar__item_search"><i class="control-bar__icon flaticon-search"></i>
-            <div class="conrol-bar__tooltip"></div>
+          <div id="control-bar__item_search" class="control-bar__item control-bar__item_search"><i class="control-bar__icon flaticon-search"></i>
+            <div class="control-bar__tooltip">Поиск</div>
           </div>
-          <div class="control-bar__item control-bar__item_cart"><i class="control-bar__icon flaticon-cart"></i>
-            <div class="conrol-bar__tooltip"></div>
+          <div id="control-bar__item_cart" class="control-bar__item control-bar__item_cart"><i class="control-bar__icon flaticon-cart"></i>
+            <div class="control-bar__tooltip">Корзина</div>
           </div>
-          <div class="control-bar__item control-bar__item_order"><i class="control-bar__icon flaticon-downl"></i>
-            <div class="conrol-bar__tooltip"></div>
+          <div id="control-bar__item_order" class="control-bar__item control-bar__item_order"> <i class="control-bar__icon flaticon-downl"></i>
+            <div class="control-bar__tooltip">Оставить заявку</div>
           </div>
-          <div class="control-bar__item control-bar__item_lang"><i class="control-bar__icon flaticon-lang"></i>
-            <div class="conrol-bar__tooltip"></div>
+          <div id="control-bar__item_lang" class="control-bar__item control-bar__item_lang"><i class="control-bar__icon flaticon-lang"></i>
+            <div class="control-bar__text">Рус</div>
+            <ul class="control-bar__list">
+              <li class="control-bar__lang"><span class="control-bar__link">Рус</span></li>
+              <li class="control-bar__lang"><a href="#" class="control-bar__link">Eng</a></li>
+              <li class="control-bar__lang"><a href="#" class="control-bar__link">Укр</a></li>
+            </ul>
           </div>
         </div>
       </nav>
@@ -235,16 +240,16 @@
               <li role="button" class="footer-tabs__tab">Россия</li>
             </ul>
             <div class="footer-tabs__item">
-              <h3 class="footer-tabs__headling flaticon-loc">Украина, Харьков, ул. Улиц 45</h3>
+              <h3 class="footer-tabs__headling footer-tabs__headling_icon flaticon-loc"><span class="footer-tabs__headling footer-tabs__headling_text">Украина, Харьков, ул. Улиц 45</span></h3>
               <h4 class="footer-tabs__subheadling">Телефоны</h4>
               <ul class="footer-tabs__contacts">
-                <li class="footer-tabs__contact"><a href="tel:+380994567890" class="footer-tabs__contact-link footer-tabs__contact-link_phone flaticon-phone">+38 099 456 78 90</a></li>
-                <li class="footer-tabs__contact"><a href="tel:+380994567890" class="footer-tabs__contact-link footer-tabs__contact-link_phone flaticon-phone">+38 099 456 78 90</a></li>
+                <li class="footer-tabs__contact"><a href="tel:+380994567890" class="footer-tabs__contact-link footer-tabs__contact-link_phone flaticon-phone"> <span class="footer-tabs__contact-text">+38 099 456 78 90</span></a></li>
+                <li class="footer-tabs__contact"><a href="tel:+380994567890" class="footer-tabs__contact-link footer-tabs__contact-link_phone flaticon-phone"> <span class="footer-tabs__contact-text">+38 099 456 78 90</span></a></li>
               </ul>
               <h4 class="footer-tabs__subheadling">Почта</h4>
               <ul class="footer-tabs__contacts">
-                <li class="footer-tabs__contact"><a href="mailto:osnova-m@gmail.com" class="footer-tabs__contact-link footer-tabs__contact-link_mail flaticon-mail">osnova-m@gmail.com</a></li>
-                <li class="footer-tabs__contact"><a href="mailto:osnova-m@gmail.com" class="footer-tabs__contact-link footer-tabs__contact-link_mail flaticon-mail">osnova-m@gmail.com</a></li>
+                <li class="footer-tabs__contact"><a href="mailto:osnova-m@gmail.com" class="footer-tabs__contact-link footer-tabs__contact-link_mail flaticon-mail"> <span class="footer-tabs__contact-text">osnova-m@gmail.com</span></a></li>
+                <li class="footer-tabs__contact"><a href="mailto:osnova-m@gmail.com" class="footer-tabs__contact-link footer-tabs__contact-link_mail flaticon-mail"> <span class="footer-tabs__contact-text">osnova-m@gmail.com</span></a></li>
               </ul>
             </div>
           </div>

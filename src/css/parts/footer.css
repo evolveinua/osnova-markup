@@ -116,11 +116,18 @@
   background-color: var(--colorTabActive);
 }
 .footer-tabs__headling  {
+  font: medium 17px 'Roboto', sans-serif;
+}
+.footer-tabs__headling_icon {
+  display: flex;
+  align-items: center;
   padding: 0;
   margin: 0;
   padding-top: 38px;
-  font: medium 17px 'Roboto', sans-serif;
   padding-bottom: 30px;
+}
+.footer-tabs__headling_text {
+  padding-left: 10px;
 }
 .footer-tabs__subheadling {
   padding: 0;
@@ -131,9 +138,18 @@
   padding: 0;
   margin: 0;
   padding-bottom: 20px;
+  list-style-type: none;
 }
 .footer-tabs__contact {
+  padding-top: 5px;
   font: 400 14px 'Roboto', sans-serif;
+}
+.footer-tabs__contact-link {
+  display: flex;
+  align-items: center;
+}
+.footer-tabs__contact-text {
+  padding-left: 10px;
 }
 .footer__credentials {
   padding: 15px 0;

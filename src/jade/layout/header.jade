@@ -2,11 +2,15 @@ header.header
   adress.header__contacts.contact-bar
     ul.contact-bar__real.contact-icons
       li.contact-icons__item
-        a.contact-icons__icon.contact-icons__icon_map.flaticon-loc(href='#footer') | Харьков
+        a.contact-icons__icon.contact-icons__icon_map.flaticon-loc(href='#footer') 
+          span.contact-icons__text Харьков
+        a.contact-icons__link
       li.contact-icons__item
-        a.contact-icons__icon.contact-icons__icon_phone.flaticon-phone(href='tel:+380636605919') + 38 099 456 78 90
+        a.contact-icons__icon.contact-icons__icon_phone.flaticon-phone(href='tel:+380636605919')
+          span.contact-icons__text + 38 099 456 78 90
       li.contact-icons__item
-         a.contact-icons__icon.contact-icons__icon_mail.flaticon-mail(href='mailto:osnova-m@gmail.com') osnova-m@gmail.com
+         a.contact-icons__icon.contact-icons__icon_mail.flaticon-mail(href='mailto:osnova-m@gmail.com') 
+          span.contact-icons__text osnova-m@gmail.com
     ul.contact-bar__social.social-icons
       li.social-icons__item
         span.social-icons__intro Мы в соцсетях:
@@ -37,15 +41,22 @@ header.header
         li#menu-item-53.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-8.current_page_item.menu-item-53
           a(href='#footer') Контакты
     .header__controls.control-bar
-      .control-bar__item.control-bar__item_search
+      .control-bar__item.control-bar__item_search(id='control-bar__item_search')
         i.control-bar__icon.flaticon-search
-        .conrol-bar__tooltip
-      .control-bar__item.control-bar__item_cart
+        .control-bar__tooltip Поиск
+      .control-bar__item.control-bar__item_cart(id='control-bar__item_cart')
         i.control-bar__icon.flaticon-cart
-        .conrol-bar__tooltip
-      .control-bar__item.control-bar__item_order
+        .control-bar__tooltip Корзина
+      .control-bar__item.control-bar__item_order(id='control-bar__item_order') 
         i.control-bar__icon.flaticon-downl
-        .conrol-bar__tooltip
-      .control-bar__item.control-bar__item_lang
+        .control-bar__tooltip Оставить заявку
+      .control-bar__item.control-bar__item_lang(id='control-bar__item_lang')
         i.control-bar__icon.flaticon-lang
-        .conrol-bar__tooltip
+        .control-bar__text Рус
+        ul.control-bar__list
+          li.control-bar__lang
+            span.control-bar__link Рус
+          li.control-bar__lang
+            a(href="#").control-bar__link Eng
+          li.control-bar__lang
+            a(href="#").control-bar__link Укр

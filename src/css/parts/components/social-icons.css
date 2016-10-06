@@ -1,0 +1,43 @@
+.social-icons {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social-icons__icon {
+  position: relative;
+  padding: 11px;
+  display: block;
+  border-radius: 11px;
+  font-size: 12px;
+}
+.social-icons__item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.social-icons__item:first-child {
+  margin-left: 0;
+}
+.social-icons__item:last-child {
+  margin-right: 0;
+}
+.social-icons__icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+}
+.social-icons__icon_linkedin::before {
+  font-size: 8px;
+}
+.social-icons__icon_google {
+  background-color: #DD4B38;
+}
+.social-icons__icon_linkedin {
+  background-color: #1176A9;
+}
+.social-icons__icon_facebook {
+  background-color: #3C6A99;
+}

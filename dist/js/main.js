@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
   try {
     initRescentSlider();
   }catch(e) {
-    console.warn(e);
+    
   }
 
   class Modal {
@@ -143,10 +143,42 @@ document.addEventListener('DOMContentLoaded', function () {
   }
   const modal = new Modal('.modal');
 
+
+  //Открыть модалку категорий
   document.querySelector('.menu-item-53 a').addEventListener('click',
     (e) => {
       e.preventDefault();
       modal.open('modal__categories_open')
     }
-  ); 
+  );
+
+  //Открыть модалку формы
+  document.getElementById('control-bar__item_order')
+          .addEventListener('click',
+          (e) => {
+            e.preventDefault();
+            modal.open('modal__form_open')
+          }
+  );
+
+  //Открыть форму поиска
+  document.getElementById('control-bar__item_search')
+          .addEventListener('click',
+          (e) => {
+            document.querySelector('html')
+                    .classList
+                    .toggle('header_search')
+          }
+  );
+
+  //Открыть выбор языка
+  document.getElementById('control-bar__item_lang')
+          .addEventListener('click', 
+            function(e) {
+              document.getElementById('control-bar__item_lang')
+                      .classList
+                      .toggle('control-bar__item_show-list');
+          });
+  
+  
 })

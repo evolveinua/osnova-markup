@@ -27,6 +27,7 @@
   --colorTabActive: #4B5D96;
   --colorTrue: #4CAF4E;
   --colorFalse: #c22942;
+  --colorTooltip: #849DAA;
 
   --evenBgColor: #EFF9FE;
   --oddBgColor: #DBE9EE;
@@ -135,13 +136,15 @@ td, th {
 @import url('parts/header.css');
 @import url('parts/footer.css');
 
+@import url('parts/components/slider-big.css');
+@import url('parts/components/slider-rescent.css');
+@import url('parts/components/slider-vendors.css');
+
+@import url('parts/components/control.css');
 
 @import url('parts/components/about-company.css');
 @import url('parts/components/button.css');
 @import url('parts/components/card.css');
-@import url('parts/components/slider-big.css');
-@import url('parts/components/control.css');
-@import url('parts/components/slider-vendors.css');
 @import url('parts/components/cards-preview.css');
 @import url('parts/components/product.css');
 @import url('parts/components/price.css');
@@ -154,5 +157,6 @@ td, th {
 @import url('parts/components/form.css');
 @import url('parts/components/upload-form.css');
 @import url('parts/components/pagination.css');
-@import url('parts/components/slider-rescent.css');
+
+@import url('parts/components/social-icons.css');
 
