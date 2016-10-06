@@ -11,6 +11,7 @@
   width: 100%;
   max-width: 100%;
   overflow: hidden;
+  z-index: var(--zModal);
 }
 .modal_open {
   visibility: visible;
@@ -25,6 +26,7 @@
   top: 0;
   bottom: 0;
   height: 100%;
+  z-index: var(--zModalChildren);
   max-height: 100%;
   background-color: var(--oddBgColor);
   width: var(--asideWidth);
@@ -42,6 +44,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  z-index: var(--zModalChildren);
   cursor: default;
   visibility: hidden;
   opacity: 0.6;

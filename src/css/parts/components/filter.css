@@ -1,0 +1,119 @@
+.filter {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: var(--headerHeight);
+  width: 100%;
+  background-color: var(--colorWhite);
+  z-index: var(--zFilter);
+  box-shadow: var(--boxShadow1);
+}
+.header-shrinked .filter { 
+  top: var(--headerShrinkedHeight); 
+}
+.filter__container {
+  max-width: var(--containerWidth);
+  margin: 0 auto;
+  display: flex;
+}
+.filter__item {
+  height: 45px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-right: var(--borderGray);
+  display: flex;
+  align-items: center;
+  font: 400 13px 'Roboto', sans-serif;
+}
+.filter__item:first-child {
+  padding-left: 0;
+}
+.filter__headling {
+  font: bold 21px 'Roboto', sans-serif;
+}
+.filter__list {
+  font: 300 12px 'Roboto', sans-serif;
+  position: relative;
+  background-color: var(--colorWhite);
+  /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px; 
+  text-overflow: '';
+  cursor: pointer;
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+  color: var(--colorText);
+  padding: 7px 15px;
+  padding-right: 25px;
+  border-radius: 2px;
+  outline: none;
+  border: var(--borderGray);
+}
+.filter__list::-ms-expand {
+  display: none;
+}
+.filter__helper {
+  position: relative;
+}
+.filter__helper::after {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  font-family: 'Flaticon';
+  font-size: 1.2em;
+  content: "\f100";
+}
+.filter__checkbox {
+  padding-right: 26px;
+  position: relative;
+  cursor: pointer;
+}
+.filter__checkbox::after {
+  content: '';
+  font-size: 0;
+  padding: 6px;
+  border: var(--borderGray);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  border-radius: 2px;
+  transform: translateY(-50%);
+}
+.filter__checkbox::before {
+  content: '';
+  font-size: 0;
+  padding: 5px;
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  border-radius: 2px;
+  opacity: 0;
+  background-color: var(--colorTrue);
+  transform: translateY(-50%);
+}
+.filter__checkbox_active::before {
+  opacity: 1;
+}
+.filter__radio {
+  position: relative;
+  cursor: pointer;
+  padding-right: 20px;
+}
+.filter__radio::after {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  font-family: 'Flaticon';
+  font-size: 1.2em;
+  content: "\f100";
+  transition: transform 0.2s ease-in;
+}
+.filter__radio:hover::after, .filter__radio_active::after {
+  transform: translateY(-50%) rotate(-180deg);
+}
+.filter__radio_active:hover::after {
+  transform: translateY(-50%);
+}

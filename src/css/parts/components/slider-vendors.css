@@ -13,7 +13,7 @@
   margin: 0;
   padding-bottom: 35px;
 }
-.slider-vendors__link {
+.slider-vendors__link.button {
   display: inline-block;
   margin: 30px auto 20px;
 }

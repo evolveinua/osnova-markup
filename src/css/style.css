@@ -36,7 +36,13 @@
   --headerShrinkedHeight: 60px;
   --containerWidth: 1250px;
   --borderGray: 1px solid var(--colorGray);
-  --boxShadow1: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);;
+  --boxShadow1: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  --zHeader: 13;
+  --zModal: 12;
+  --zModalChildren: 12;
+  --zMap: 0;
+  --zFilter: 12;
 }
 
 
@@ -157,6 +163,9 @@ td, th {
 @import url('parts/components/form.css');
 @import url('parts/components/upload-form.css');
 @import url('parts/components/pagination.css');
+@import url('parts/components/filter.css');
 
 @import url('parts/components/social-icons.css');
+@import url('parts/components/ya-share2.css');
+
 

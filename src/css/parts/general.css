@@ -35,6 +35,9 @@ body {
 .container.container_colored {
   background-color: var(--colorBase);
 }
+.container_catalog {
+  margin-top: 65px;
+}
 .wrapper {
   max-width: 1140px;
   margin: 0 auto;

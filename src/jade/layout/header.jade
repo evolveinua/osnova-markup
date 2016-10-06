@@ -1,3 +1,4 @@
+include ../components/icon_close.jade
 header.header
   adress.header__contacts.contact-bar
     ul.contact-bar__real.contact-icons
@@ -24,7 +25,7 @@ header.header
     .header__logo
       a(href='/')
         img(src='images/logo-up.svg')
-        img(src='images/logo-down.svg')
+        img(src='images/logo-down.svg').header__logo_small
     .header__navigation
       .header__mobile-hamburger.hamburger-button
         i.hamburger-button__icon.flaticon-menu
@@ -40,6 +41,11 @@ header.header
           a(href='/cert.html') Сертификаты
         li#menu-item-53.menu-item.menu-item-type-post_type.menu-item-object-page.current-menu-item.page_item.page-item-8.current_page_item.menu-item-53
           a(href='#footer') Контакты
+    form.header__search.search-bar
+      .search-bar__close(id='search-bar__close')
+        mixin icon_close()
+      input(type='text' placeholder='Введите название товара').input.search-bar__input
+      input(type='submit').search__submit
     .header__controls.control-bar
       .control-bar__item.control-bar__item_search(id='control-bar__item_search')
         i.control-bar__icon.flaticon-search

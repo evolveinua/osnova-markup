@@ -1,0 +1,20 @@
+mixin filter ()
+  .filter
+    .filter__container
+      .filter__item
+        .filter__headling Фильтр:
+      .filter__item
+        .filter__helper
+          select.filter__list
+            option.filter__option(disabled selected) Производитель
+            option.filter__option Все
+            option.filter__option Произв 1
+            option.filter__option Произв 2
+      .filter__item
+        .filter__checkbox.filter__checkbox_active Есть в наличии
+      .filter__item
+        .filter__checkbox Мастер-система
+      .filter__item
+        .filter__radio.filter__radio_active Цена
+      .filter__item
+        .filter__radio Новизна
