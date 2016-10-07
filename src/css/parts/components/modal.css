@@ -108,7 +108,13 @@
   border-radius: 1px;
 }
 .modal-categories__name_subcategories::after {
-
+  content: '\f100';
+  font-family: 'Flaticon';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  font-size: 10px;
+  transform: translateY(-50%);
 }
 .modal-categories__subcategories {
   list-style-type: none;

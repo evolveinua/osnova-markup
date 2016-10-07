@@ -73,6 +73,7 @@
   padding: 0;
   margin: 0;
   font: medium 17px 'Roboto', sans-serif;
+  padding-bottom: 15px;
 }
 .footer-form__headling {
   padding: 0;
@@ -88,6 +89,9 @@
 }
 .footer-form__input, .footer-form__textarea {
   margin-bottom: 15px;
+}
+.footer-form__textarea {
+  height: 110px;
 }
 .footer-form__submit {
   margin: 0 0 0 auto;

@@ -4,19 +4,97 @@ block content
     table.cart__table.cart-table
       tr.cart-table__row
         td.cart-table__thumbnail
-          img(src='http://placehold.it/50x50')
+          img(src='http://placehold.it/110x75')
         td.cart-table__description
-          h3.cart-table__name 
+          h3.cart-table__name Замок RZ 7309
           ul.cart-table__categories.categories
             li.categories__category
-              a(href="#") Category 1
-          .cart-table__article
+              a(href="#") Категория 1
+          .cart-table__article Артикул: 6567463
         td.cart-table__buttons
-          .cart-table__up 
-          .cart-table__down 
-          .caer-table__quantity 3
-        td.cart-table__price
+          .cart-table__button.cart-table__button_up
+          .cart-table__button.cart-table__button_down
+          input(type='text' value='3').cart-table__quantity
+        td.cart-table__subprice 2500 грн
+        td.cart-table__price 7500 грн
+      tr.cart-table__row
+        td.cart-table__thumbnail
+          img(src='http://placehold.it/110x75')
+        td.cart-table__description
+          h3.cart-table__name Замок RZ 7309
+          ul.cart-table__categories.categories
+            li.categories__category
+              a(href="#") Категория 1
+            li.categories__category
+              a(href="#") Категория 2
+          .cart-table__article Артикул: 6567463
+        td.cart-table__buttons
+          .cart-table__button.cart-table__button_up
+          .cart-table__button.cart-table__button_down
+          input(type='text' value='3').cart-table__quantity
+        td.cart-table__subprice 2500 грн
+        td.cart-table__price 7500 грн
+      tr.cart-table__row
+        td.cart-table__thumbnail
+          img(src='http://placehold.it/110x75')
+        td.cart-table__description
+          h3.cart-table__name Замок RZ 7309
+          ul.cart-table__categories.categories
+            li.categories__category
+              a(href="#") Категория 1
+            li.categories__category
+              a(href="#") Категория 2
+          .cart-table__article Артикул: 6567463
+        td.cart-table__buttons
+          .cart-table__button.cart-table__button_up
+          .cart-table__button.cart-table__button_down
+          input(type='text' value='3').cart-table__quantity
+        td.cart-table__subprice 2500 грн
+        td.cart-table__price 7500 грн
+      tr.cart-table__row
+        td.cart-table__thumbnail
+          img(src='http://placehold.it/110x75')
+        td.cart-table__description
+          h3.cart-table__name Замок RZ 7309
+          ul.cart-table__categories.categories
+            li.categories__category
+              a(href="#") Категория 1
+            li.categories__category
+              a(href="#") Категория 2
+          .cart-table__article Артикул: 6567463
+        td.cart-table__buttons
+          .cart-table__button.cart-table__button_up
+          .cart-table__button.cart-table__button_down
+          input(type='text' value='3').cart-table__quantity
+        td.cart-table__subprice 2500 грн
+        td.cart-table__price 7500 грн
+    .card__total.button Итого: 225000 грн
     .cart__description
+      h2.card__headling Для оформления заказа заполните, пожалуйста, следующие поля
+      p.card__subheadling Предоставленная Вами информация будет использована нами ТОЛЬКО для обработки вашего заказа
     form.cart__form.form.cart-form
       .cart-form__column
+        label.cart-form__label
+          .cart-form__name Имя*
+          input(type='text' placeholder='Имя' name='uname').input.form__input.cart-form__input
+        label.cart-form__label
+          .cart-form__name Телефон*
+          input(type='text' placeholder='Телефон' name='uphone').input.form__input.cart-form__input
+        label.cart-form__label
+          .cart-form__name Страна*
+          input(type='text' placeholder='Страна' name='ucountry').input.form__input.cart-form__input
+        label.cart-form__label
+          .cart-form__name Улица
+          input(type='text' placeholder='Улица' name='ustreet').input.form__input.cart-form__input
+      .cart-form__column
+        label.cart-form__label
+          .cart-form__name Фамилия*
+          input(type='text' placeholder='Фамилия' name='usurname').input.form__input.cart-form__input
+        label.cart-form__label
+          .cart-form__name E-mail*
+          input(type='text' placeholder='E-mail' name='umail').input.form__input.cart-form__input
+        label.cart-form__label
+          .cart-form__name Город*
+          input(type='text' placeholder='Город' name='ucity').input.form__input.cart-form__input
+      button(type='submit').button.button_green.cart-form__submit Заказать!
         

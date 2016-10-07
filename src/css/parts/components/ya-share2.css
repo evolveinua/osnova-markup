@@ -10,8 +10,9 @@
   margin: 0;
   padding: 0;
   display: flex;
+  width: 130px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .ya-share2__item {
   font-size: 0;

@@ -72,10 +72,8 @@
         <div class="header__controls control-bar">
           <div id="control-bar__item_search" class="control-bar__item control-bar__item_search"><i class="control-bar__icon flaticon-search"></i>
             <div class="control-bar__tooltip">Поиск</div>
-          </div>
-          <div id="control-bar__item_cart" class="control-bar__item control-bar__item_cart"><i class="control-bar__icon flaticon-cart"></i>
-            <div class="control-bar__tooltip">Корзина</div>
-          </div>
+          </div><a href="cart.html" id="control-bar__item_cart" class="control-bar__item control-bar__item_cart"><i class="control-bar__icon flaticon-cart"></i>
+            <div class="control-bar__tooltip">Корзина</div></a>
           <div id="control-bar__item_order" class="control-bar__item control-bar__item_order"> <i class="control-bar__icon flaticon-downl"></i>
             <div class="control-bar__tooltip">Оставить заявку</div>
           </div>
@@ -94,25 +92,116 @@
       <div class="container container_top cart">
         <table class="cart__table cart-table">
           <tr class="cart-table__row">
-            <td class="cart-table__thumbnail"><img src="http://placehold.it/50x50"></td>
+            <td class="cart-table__thumbnail"><img src="http://placehold.it/110x75"></td>
             <td class="cart-table__description">
-              <h3 class="cart-table__name"> </h3>
+              <h3 class="cart-table__name">Замок RZ 7309</h3>
               <ul class="cart-table__categories categories">
-                <li class="categories__category"><a href="#">Category 1</a></li>
+                <li class="categories__category"><a href="#">Категория 1</a></li>
               </ul>
-              <div class="cart-table__article"></div>
+              <div class="cart-table__article">Артикул: 6567463</div>
             </td>
             <td class="cart-table__buttons">
-              <div class="cart-table__up"> </div>
-              <div class="cart-table__down"> </div>
-              <div class="caer-table__quantity">3</div>
+              <div class="cart-table__button cart-table__button_up"></div>
+              <div class="cart-table__button cart-table__button_down"></div>
+              <input type="text" value="3" class="cart-table__quantity">
             </td>
-            <td class="cart-table__price"></td>
+            <td class="cart-table__subprice">2500 грн</td>
+            <td class="cart-table__price">7500 грн</td>
+          </tr>
+          <tr class="cart-table__row">
+            <td class="cart-table__thumbnail"><img src="http://placehold.it/110x75"></td>
+            <td class="cart-table__description">
+              <h3 class="cart-table__name">Замок RZ 7309</h3>
+              <ul class="cart-table__categories categories">
+                <li class="categories__category"><a href="#">Категория 1</a></li>
+                <li class="categories__category"><a href="#">Категория 2</a></li>
+              </ul>
+              <div class="cart-table__article">Артикул: 6567463</div>
+            </td>
+            <td class="cart-table__buttons">
+              <div class="cart-table__button cart-table__button_up"></div>
+              <div class="cart-table__button cart-table__button_down"></div>
+              <input type="text" value="3" class="cart-table__quantity">
+            </td>
+            <td class="cart-table__subprice">2500 грн</td>
+            <td class="cart-table__price">7500 грн</td>
+          </tr>
+          <tr class="cart-table__row">
+            <td class="cart-table__thumbnail"><img src="http://placehold.it/110x75"></td>
+            <td class="cart-table__description">
+              <h3 class="cart-table__name">Замок RZ 7309</h3>
+              <ul class="cart-table__categories categories">
+                <li class="categories__category"><a href="#">Категория 1</a></li>
+                <li class="categories__category"><a href="#">Категория 2</a></li>
+              </ul>
+              <div class="cart-table__article">Артикул: 6567463</div>
+            </td>
+            <td class="cart-table__buttons">
+              <div class="cart-table__button cart-table__button_up"></div>
+              <div class="cart-table__button cart-table__button_down"></div>
+              <input type="text" value="3" class="cart-table__quantity">
+            </td>
+            <td class="cart-table__subprice">2500 грн</td>
+            <td class="cart-table__price">7500 грн</td>
+          </tr>
+          <tr class="cart-table__row">
+            <td class="cart-table__thumbnail"><img src="http://placehold.it/110x75"></td>
+            <td class="cart-table__description">
+              <h3 class="cart-table__name">Замок RZ 7309</h3>
+              <ul class="cart-table__categories categories">
+                <li class="categories__category"><a href="#">Категория 1</a></li>
+                <li class="categories__category"><a href="#">Категория 2</a></li>
+              </ul>
+              <div class="cart-table__article">Артикул: 6567463</div>
+            </td>
+            <td class="cart-table__buttons">
+              <div class="cart-table__button cart-table__button_up"></div>
+              <div class="cart-table__button cart-table__button_down"></div>
+              <input type="text" value="3" class="cart-table__quantity">
+            </td>
+            <td class="cart-table__subprice">2500 грн</td>
+            <td class="cart-table__price">7500 грн</td>
           </tr>
         </table>
-        <div class="cart__description"></div>
+        <div class="card__total button">Итого: 225000 грн</div>
+        <div class="cart__description">
+          <h2 class="card__headling">Для оформления заказа заполните, пожалуйста, следующие поля</h2>
+          <p class="card__subheadling">Предоставленная Вами информация будет использована нами ТОЛЬКО для обработки вашего заказа</p>
+        </div>
         <form class="cart__form form cart-form">
-          <div class="cart-form__column"></div>
+          <div class="cart-form__column">
+            <label class="cart-form__label">
+              <div class="cart-form__name">Имя*</div>
+              <input type="text" placeholder="Имя" name="uname" class="input form__input cart-form__input">
+            </label>
+            <label class="cart-form__label">
+              <div class="cart-form__name">Телефон*</div>
+              <input type="text" placeholder="Телефон" name="uphone" class="input form__input cart-form__input">
+            </label>
+            <label class="cart-form__label">
+              <div class="cart-form__name">Страна*</div>
+              <input type="text" placeholder="Страна" name="ucountry" class="input form__input cart-form__input">
+            </label>
+            <label class="cart-form__label">
+              <div class="cart-form__name">Улица</div>
+              <input type="text" placeholder="Улица" name="ustreet" class="input form__input cart-form__input">
+            </label>
+          </div>
+          <div class="cart-form__column">
+            <label class="cart-form__label">
+              <div class="cart-form__name">Фамилия*</div>
+              <input type="text" placeholder="Фамилия" name="usurname" class="input form__input cart-form__input">
+            </label>
+            <label class="cart-form__label">
+              <div class="cart-form__name">E-mail*</div>
+              <input type="text" placeholder="E-mail" name="umail" class="input form__input cart-form__input">
+            </label>
+            <label class="cart-form__label">
+              <div class="cart-form__name">Город*</div>
+              <input type="text" placeholder="Город" name="ucity" class="input form__input cart-form__input">
+            </label>
+          </div>
+          <button type="submit" class="button button_green cart-form__submit">Заказать!</button>
         </form>
       </div>
     </main>
